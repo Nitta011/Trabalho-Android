@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <EditText
-        android:id="@+id/nome"
+        android:id="@+id/pessoa_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -30,64 +30,64 @@
         app:layout_constraintTop_toTopOf="@id/textView" />
 
     <EditText
-        android:id="@+id/dt_nascimento"
+        android:id="@+id/pessoa_dt_nascimento"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="Data de nascimento"
         android:inputType="date"
-        app:layout_constraintEnd_toEndOf="@id/nome"
+        app:layout_constraintEnd_toEndOf="@id/pessoa_nome"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/nome"
-        app:layout_constraintTop_toBottomOf="@+id/nome" />
+        app:layout_constraintStart_toStartOf="@id/pessoa_nome"
+        app:layout_constraintTop_toBottomOf="@+id/pessoa_nome" />
 
     <EditText
-        android:id="@+id/telefone"
+        android:id="@+id/pessoa_telefone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="Telefone"
         android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="@id/nome"
+        app:layout_constraintEnd_toEndOf="@id/pessoa_nome"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/nome"
-        app:layout_constraintTop_toBottomOf="@+id/dt_nascimento" />
+        app:layout_constraintStart_toStartOf="@id/pessoa_nome"
+        app:layout_constraintTop_toBottomOf="@+id/pessoa_dt_nascimento" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/pessoa_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@id/nome"
+        app:layout_constraintEnd_toEndOf="@id/pessoa_nome"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/nome"
-        app:layout_constraintTop_toBottomOf="@+id/telefone" />
+        app:layout_constraintStart_toStartOf="@id/pessoa_nome"
+        app:layout_constraintTop_toBottomOf="@+id/pessoa_telefone" />
 
     <EditText
-        android:id="@+id/rua"
+        android:id="@+id/pessoa_rua"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="Rua"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@id/nome"
+        app:layout_constraintEnd_toEndOf="@id/pessoa_nome"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/nome"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintStart_toStartOf="@id/pessoa_nome"
+        app:layout_constraintTop_toBottomOf="@+id/pessoa_email" />
 
     <EditText
-        android:id="@+id/cep"
+        android:id="@+id/pessoa_cep"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="CEP"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@id/nome"
+        app:layout_constraintEnd_toEndOf="@id/pessoa_nome"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/nome"
-        app:layout_constraintTop_toBottomOf="@+id/rua" />
+        app:layout_constraintStart_toStartOf="@id/pessoa_nome"
+        app:layout_constraintTop_toBottomOf="@+id/pessoa_rua" />
 
     <Button android:id="@+id/botao_salvar"
         android:layout_width="0dp"

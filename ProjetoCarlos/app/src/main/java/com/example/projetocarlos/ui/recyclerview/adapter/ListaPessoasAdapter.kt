@@ -11,22 +11,25 @@ import com.example.projetocarlos.model.Pessoas
 
 class ListaPessoasAdapter(
     private val context: Context,
-    private val pessoas : List<Pessoas>
+    pessoas : List<Pessoas>
 ) : RecyclerView.Adapter<ListaPessoasAdapter.ViewHolder>() {
 
+    private val pessoas = pessoas.toMutableList()
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+
         fun vincula(pessoa: Pessoas) {
-            val nome = itemView.findViewById<TextView>(R.id.nome)
+            val nome = itemView.findViewById<TextView>(R.id.pessoa_nome)
             nome.text = pessoa.nome
-            val dt_nascimento = itemView.findViewById<TextView>(R.id.dt_nascimento)
+            val dt_nascimento = itemView.findViewById<TextView>(R.id.pessoa_dt_nascimento)
             dt_nascimento.text = pessoa.dt_nascimento
-            val telefone = itemView.findViewById<TextView>(R.id.telefone)
+            val telefone = itemView.findViewById<TextView>(R.id.pessoa_telefone)
             telefone.text = pessoa.telefone
-            val email = itemView.findViewById<TextView>(R.id.email)
+            val email = itemView.findViewById<TextView>(R.id.pessoa_email)
             email.text = pessoa.email
-            val rua = itemView.findViewById<TextView>(R.id.rua)
+            val rua = itemView.findViewById<TextView>(R.id.pessoa_rua)
             rua.text = pessoa.rua
-            val cep = itemView.findViewById<TextView>(R.id.cep)
+            val cep = itemView.findViewById<TextView>(R.id.pessoa_cep)
             cep.text = pessoa.cep
         }
     }
@@ -39,9 +42,15 @@ class ListaPessoasAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val pessoa = pessoas[position]
-    holder.vincula(pessoa)
+        holder.vincula(pessoa)
     }
 
     override fun getItemCount(): Int = pessoas.size
+    fun att(pessoas: List<Pessoas>) {
+    this.pessoas.clear()
+    this.pessoas.addAll(pessoas)
+        notifyDataSetChanged()
+    }
+
 
 }
