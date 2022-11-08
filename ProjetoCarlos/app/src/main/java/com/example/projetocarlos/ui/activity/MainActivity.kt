@@ -1,17 +1,16 @@
 package com.example.projetocarlos.ui.activity
 
-import android.app.Activity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projetocarlos.R
 import com.example.projetocarlos.model.Pessoas
 import com.example.projetocarlos.ui.recyclerview.adapter.ListaPessoasAdapter
 
-class MainActivity : Activity(){
+class MainActivity : AppCompatActivity(R.layout.activity_main){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
  //       val nome = findViewById<TextView>(R.id.nome)
 //        nome.text = "Lista de Pessoas"
 //        val descricao = findViewById<TextView>(R.id.descricao)
@@ -26,6 +25,7 @@ class MainActivity : Activity(){
         Pessoas(nome = "Gustavo", dt_nascimento = "14/05/2001", telefone = "(44) 99833242",
             email = "gufrancozo@edu.unipar.br", rua = "Av. Angelo Moreira da Fonseca", cep = "98701-201" )
         ))
+
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
 
