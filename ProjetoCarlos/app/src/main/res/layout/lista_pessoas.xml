@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dt_nascimento"
-        tools:text=""/>
+        tools:text="11/03/2002"/>
 
     <TextView
         android:id="@+id/email"
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telefone"
-        tools:text="agbriel.nitta@edu.unipar.br"/>
+        tools:text="gabriel.nitta@edu.unipar.br"/>
 
     <TextView
         android:id="@+id/rua"
