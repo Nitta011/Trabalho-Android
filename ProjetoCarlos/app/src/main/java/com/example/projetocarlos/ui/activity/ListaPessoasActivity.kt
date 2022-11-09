@@ -29,7 +29,7 @@ class ListaPessoasActivity : AppCompatActivity(R.layout.activity_lista_pessoas) 
     private fun configuraFab() {
         val fab = findViewById<FloatingActionButton>(R.id.pessoa_floatingActionButton)
         fab.setOnClickListener {
-         val intent =  Intent(this, FormularioPessoasActivity::class.java)
+            val intent =  Intent(this, FormularioPessoasActivity::class.java)
             startActivity(intent)
         }
     }

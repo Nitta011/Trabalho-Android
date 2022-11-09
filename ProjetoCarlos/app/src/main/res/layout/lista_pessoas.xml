@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/pessoa_email"
         tools:text="getulio vargas"/>
 
-<TextView
+    <TextView
         android:id="@+id/pessoa_cep"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

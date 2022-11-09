@@ -51,6 +51,4 @@ class ListaPessoasAdapter(
     this.pessoas.addAll(pessoas)
         notifyDataSetChanged()
     }
-
-
 }
